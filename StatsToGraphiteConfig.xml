@@ -9,13 +9,17 @@
 		<SendUsingUDP>False</SendUsingUDP>
 	</Graphite>
 	<PerformanceCounters>
-	<Counter Name="\Network Interface(*)\Bytes Received/sec"/>
-	<Counter Name="\Network Interface(*)\Bytes Sent/sec"/>
-	<Counter Name="\Network Interface(*)\Packets Received Unicast/sec"/>
-	<Counter Name="\Network Interface(*)\Packets Sent Unicast/sec"/>
-	<Counter Name="\Network Interface(*)\Packets Received Non-Unicast/sec"/>
-	<Counter Name="\Network Interface(*)\Packets Sent Non-Unicast/sec"/>
-	<Counter Name="\Processor(_Total)\% Processor Time"/>
+	    <Counter Name="\Network Interface(*)\Bytes Received/sec"/>
+	    <Counter Name="\Network Interface(*)\Bytes Sent/sec"/>
+        <Counter Name="\Network Interface(*)\Bytes Total/sec"/>
+        <Counter Name="\Network Adapter(*)\Bytes Total/sec"/>
+        <Counter Name="\Network Adapter(*)\Packets/sec"/>
+        <Counter Name="\Network Adapter(*)\Packets Received/sec"/>
+        <Counter Name="\Network Adapter(*)\Packets Sent/sec"/>
+        <Counter Name="\Network Adapter(*)\Current Bandwidth"/>
+        <Counter Name="\Network Adapter(*)\Bytes Received/sec"/>
+        <Counter Name="\Network Adapter(*)\Bytes Sent/sec"/>
+	    <Counter Name="\Processor(_Total)\% Processor Time"/>
         <Counter Name="\Processor(*)\% User Time"/>
         <Counter Name="\Processor(*)\% Privileged Time"/>
         <Counter Name="\Paging File(*)\% Usage"/>
@@ -63,12 +67,14 @@
         <Counter Name="\Memory\Available Bytes"/>
         <Counter Name="\Memory\Committed Bytes"/>
         <Counter Name="\Memory\Pages/sec"/>
-        <Counter Name="\Memory\Pool Paged Bytes"/>
-	<Counter Name="\Memory\Cache Bytes"/>
-	<Counter Name="\Memory\Pages Input/sec"/>
-	<Counter Name="\System\Processor Queue Length"/>
-	<Counter Name="\PhysicalDisk(*)\Avg. Disk Write Queue Length"/>
-	<Counter Name="\PhysicalDisk(*)\Avg. Disk Read Queue Length"/>
+        <Counter Name="\Memory\Page Reads/sec"/>
+        <Counter Name="\Memory\Page Writes/sec"/>
+        <Counter Name="\Memory\Pages Input/sec"/>
+        <Counter Name="\Memory\Pages Output/sec"/>
+        <Counter Name="\Memory\Page Faults/sec"/>
+        <Counter Name="\System\Processor Queue Length"/>
+	    <Counter Name="\PhysicalDisk(*)\Avg. Disk Write Queue Length"/>
+	    <Counter Name="\PhysicalDisk(*)\Avg. Disk Read Queue Length"/>
 	</PerformanceCounters>
 	<MetricCleaning>
 		<!-- These will be found and replaced in the order they appear here -->
